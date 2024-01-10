@@ -1,0 +1,6 @@
+# **Cd**
+> [user@sahara ~/lecture1]$ cd
+> [user@sahara ~]$ cd lecturel/
+> [user@sahara ~/lecture1]$ cd messages/
+> [user@sahara ~/lecturel/messages]$ cd en-us.txt
+> bash: cd: en-us.txt: Not a directory
