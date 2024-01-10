@@ -1,4 +1,3 @@
----
 # **cd**
 ---
 * cd with no input brings me back to the root directory
@@ -18,9 +17,6 @@
 bash: cd: en-us.txt: Not a directory
 ```
 
----
-
----
 # **ls**
 ---
 * ls with no input shows me the currently viewable directories or files
@@ -39,9 +35,6 @@ Hello.class Hello.java messages README
 lecture1/messages/en-us.txt
 ```
 
----
-
----
 # **cat**
 ---
 * cat with no input results in a scenario where it begins reading from standard input
