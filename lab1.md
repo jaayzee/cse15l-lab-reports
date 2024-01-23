@@ -1,16 +1,16 @@
 # **`cd`**
 ---
-* `cd` with no input brings me back to the root directory
+* `cd` with no input from the directory `/home/lecture1` brings me back to the `home` directory
 ```
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~/]$
 ```
-* `cd` with a path to a folder results in entering the pathway
+* `cd` with a path to a folder from the `home` directory results in entering the pathway specified, in this case into `/home/lecture1`
 ```
 [user@sahara ~]$ cd lecturel/
 [user@sahara ~/lecture1]$
 ```
-* `cd` with a path to a file results in an error, can't cd into non directories
+* `cd` with a path to a file from the `/home/lecture1/messages` directory results in an error, as you can't cd into non directories
 ```
 [user@sahara ~/lecture1]$ cd messages/
 [user@sahara ~/lecturel/messages]$ cd en-us.txt
@@ -19,17 +19,17 @@ bash: cd: en-us.txt: Not a directory
 
 # **`ls`**
 ---
-* `ls` with no input shows me the currently viewable directories or files
+* `ls` from the `/home` directory with no input shows me the currently viewable directories or files, in this case `lecture1` is available
 ```
 [user@sahara ~]$ ls
 lecture1
 ```
-* `ls` with a path to a directory results in viewing the available directories and files when in the path
+* `ls` from the `/home` directory with a path to a directory results in viewing the available directories and files within the path, in this case, the files and directories within `/home/lecture1`
 ```
 [user@sahara ~]$ ls lecturel
 Hello.class Hello.java messages README
 ```
-* `ls` with a path to a file result in the path it is found in
+* `ls` from the `/home` directory with a path to a file result in the path it is found in; in this case, the `en-us.txt` file has the path `/lecture1/messages/en-us.txt` from `/home`
 ```
 [user@sahara ~]$ ls lecture1/messages/en-us.txt
 lecture1/messages/en-us.txt
@@ -37,17 +37,19 @@ lecture1/messages/en-us.txt
 
 # **`cat`**
 ---
-* `cat` with no input results in a scenario where it begins reading from standard input
+* `cat` from the `/home` directory with no input results in a scenario where it begins reading from standard input, and outputs the result of concatenating, which is just the same text back
 ```
 [user@sahara ~]$ cat
+ben
+ben
 ^C
 ```
-* `cat` with a path to a directory results in an error as it can not concatenate a directory
+* `cat` from the `/home` directory with a path to a directory results in an error as it can not concatenate a directory, in this case it attempts to concatenate `/lecture1`, which it can't do as there is no concatenatable data provided
 ```
 [user@sahara ~]$ cat lecturel
 cat: lecturel: Is a directory
 ```
-* `cat` with a path to a file results in reading the file contents and displaying them
+* `cat` from the `/home` directory with a path to a file results in reading the file contents and displaying them
 ```
 [user@sahara ~]$ cat lecturel/messages/en-us.txt
 Hello World!
