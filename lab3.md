@@ -1,5 +1,5 @@
 # **`CODE`**
-[Image]()
+[Image](Lab3Code.png)
 # **`Chatter 1`**
 ---
 * After the server is started, method `handleRequest` is called upon whenever the URL is changed
@@ -16,7 +16,7 @@ The third element of the first array includes the user, to which we assign to th
 * To produce the chat, we concatenate `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\n"`)(the `\n` is important in printing the chat across multiple lines)
 * The chat is then returned to be displayed
 ```
-[Image]()
+[Image](chatter1.png)
 ```
 # **`Chatter 2`**
 ---
@@ -33,5 +33,5 @@ The third element of the first array includes the user, to which we assign to th
 * Chat in this instance, already has the previous message baked into the string, to which we concatenate the new  `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\nresponderMan: I+have+responded\n"`)
 * The chat is then returned to be displayed
 ```
-[Image]()
+[Image](chatter2.png)
 ```
