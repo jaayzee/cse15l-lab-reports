@@ -35,3 +35,7 @@ The third element of the first array includes the user, to which we assign to th
 
 ![Image](chatter2.png)
 
+# **`Part 2`**
+
+# **`Part 3`**
+I learned a lot about specific Unix commands, as I wasn't too familiar with using the terminal before. I also learned about how URLs are handled and how I could read specific arguments from said URLS. Running a server through Java was also new to me, and I hadn't know I could choose my ports when I start a localhost.
