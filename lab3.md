@@ -1,5 +1,5 @@
 # **`CODE`**
-[Image](Lab3Code.png)
+![Image](Lab3Code.png)
 # **`Chatter 1`**
 ---
 * After the server is started, method `handleRequest` is called upon whenever the URL is changed
@@ -15,9 +15,9 @@ we extract the message by separating by `&` where the message is the the first e
 The third element of the first array includes the user, to which we assign to the String `user` (`"jpolitz"`)
 * To produce the chat, we concatenate `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\n"`)(the `\n` is important in printing the chat across multiple lines)
 * The chat is then returned to be displayed
-```
-[Image](chatter1.png)
-```
+
+![Image](chatter1.png)
+
 # **`Chatter 2`**
 ---
 * After the first call, additional calls with also call upon the `handleRequest` method, to which it will do the same thing
@@ -32,6 +32,6 @@ we extract the message by separating by `&` where the message is the the first e
 The third element of the first array includes the user, to which we assign to the String `user` (`"responderMan`)
 * Chat in this instance, already has the previous message baked into the string, to which we concatenate the new  `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\nresponderMan: I+have+responded\n"`)
 * The chat is then returned to be displayed
-```
-[Image](chatter2.png)
-```
+
+![Image](chatter2.png)
+
