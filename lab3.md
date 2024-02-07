@@ -36,8 +36,11 @@ The third element of the first array includes the user, to which we assign to th
 ![Image](chatter2.png)
 
 # **`Part 2`**
-![Image](privateKey.png)
-![Image](remoteKey.png)
+**`Private Key`**
+![Image](private.png)
+**`Public Key`**
+![Image](public.png)
+**`Passwordless Login`**
 ![Image](pwlessLogin.png)
 
 # **`Part 3`**
