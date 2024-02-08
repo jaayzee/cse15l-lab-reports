@@ -152,7 +152,7 @@ technical/biomed/1471-2091-3-23.txt
 :
 ```
 
-* -type f is a commandline option that changes the listing of every file and directory in `technical/` to just files in `technical/`. This is useful in the event that I am searching for a specific nested file within folders. I used ` | less` as the total output of the number of files is humongous, and I didn't want to overtake my whole page, so this small snippet is only a TASTE.
+* -type f is a commandline option that changes the listing of every file and directory in `technical/` to just files in `technical/`. This is useful in the event that I am searching for a specific nested file within folders. I passed the output into `less`, as the total output of the number of files is humongous, and I didn't want to overtake my whole page, so this small snippet is only a TASTE.
 
 # `find -user`
 
@@ -199,7 +199,7 @@ technical/biomed/1471-2091-3-16.txt
 technical/biomed/1471-2091-3-17.txt
 ```  
 
-* -user is a commandline option that changes the listing of every file and directory in `technical/` to files and directories owned by "user", in this case `jozo2` in `technical/`. This is useful in the event that I am searching a computer used by different users, and I want only the files/directories I worked on. I used ` | less` as the total output of the number of files is humongous, and I didn't want to overtake my whole page, so this small snippet is only a TASTE.
+* -user is a commandline option that changes the listing of every file and directory in `technical/` to files and directories owned by "user", in this case `jozo2` in `technical/`. This is useful in the event that I am searching a computer used by different users, and I want only the files/directories I worked on. I passed the output into `less`, as the total output of the number of files is humongous, and I didn't want to overtake my whole page, so this small snippet is only a TASTE.
 
 ```
 jozo2@zhou MINGW64 ~/docsearch (main)
