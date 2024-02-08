@@ -283,4 +283,4 @@ technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 * In this case, I am searching for files sized above 117 kibibytes within the `technical/` directory. This is useful in the event that I am searching for files that are above a certain size, and causing my device's storage to be overly impacted.
 
 # **`SOURCE`**
-`https://man7.org/linux/man-pages/man1/find.1.html`
+[Man7 Linux Find Options](https://man7.org/linux/man-pages/man1/find.1.html)
