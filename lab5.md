@@ -239,20 +239,27 @@ technical/911report/chapter-8.txt
 technical/911report/chapter-9.txt
 technical/911report/preface.txt
 ```
-* -used is a commandline option that changes the listing of every file and directory in `technical/911report/` to files and directories accessed within the time frame specified, in this case `-1` would mean accessed less than a day ago. `+` would denote "more than", and no sign would denote "exactly". This is useful in the event that I am searching for files that were recently worked on, so that I may review them.
+* -used is a commandline option that changes the listing of every file and directory in `technical/911report/` to files and directories accessed within the time frame specified, in this case `-1` would mean accessed less than a day ago. `+` would denote "more than", and no sign would denote "exactly". This is useful in the event that I am searching for files that were recently worked on, so that I may review them.  
+
+
 ```
 jozo2@zhou MINGW64 ~/docsearch (main)
 $ find technical/911report/ -used +3
 
 ```
+  
 * In this case, the `-used` commandline option would return nothing, as there are no files last accessed more than 3 days ago (`+3`), as I am making this markdown report the day I `git clone`d the repo.
+  
 
 `find -size`
+  
 ```
 $ find technical/ -size 117k
 technical/911report/chapter-1.txt
 ```
+  
 * -size is a commandline option that changes the listing of every file and directory in `technical/` to files within a certain size, in this case `117k` would mean sized exactly at 117 kibibytes. `+` would denote "more than" `-` denotes "less than", and no sign would denote "exactly". This is useful if I know the size of certain files that I am searching for. In this case using the "exactly" version of the search.
+  
 ```
 jozo2@zhou MINGW64 ~/docsearch (main)
 $ find technical/ -size +117k
@@ -280,6 +287,7 @@ technical/government/Gen_Account_Office/im814.txt
 technical/government/Gen_Account_Office/pe1019.txt
 technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 ```
+  
 * In this case, I am searching for files sized above 117 kibibytes within the `technical/` directory. This is useful in the event that I am searching for files that are above a certain size, and causing my device's storage to be overly impacted.
 
 # **`SOURCE`**
