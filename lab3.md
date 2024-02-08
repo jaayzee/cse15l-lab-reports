@@ -1,5 +1,5 @@
 # **`CODE`**
-![Image](Lab3Code.png)
+![Image](/images/Lab3Code.png)
 # **`Chatter 1`**
 ---
 * After the server is started, method `handleRequest` is called upon whenever the URL is changed
@@ -16,7 +16,7 @@ The third element of the first array includes the user, to which we assign to th
 * To produce the chat, we concatenate `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\n"`)(the `\n` is important in printing the chat across multiple lines)
 * The chat is then returned to be displayed
 
-![Image](chatter1.png)
+![Image](/images/chatter1.png)
 
 # **`Chatter 2`**
 ---
@@ -33,15 +33,15 @@ The third element of the first array includes the user, to which we assign to th
 * Chat in this instance, already has the previous message baked into the string, to which we concatenate the new  `user + ": " + msg + "\n"` to the String `chat` (`"jpolitz: Hello\nresponderMan: I+have+responded\n"`)
 * The chat is then returned to be displayed
 
-![Image](chatter2.png)
+![Image](/images/chatter2.png)
 
 # **`Part 2`**
 * `Private Key`
-* ![Image](private.png)
+* ![Image](/images/private.png)
 * `Public Key`
-* ![Image](public.png)
+* ![Image](/images/public.png)
 * `Passwordless Login`
-* ![Image](pwlessLogin.png)
+* ![Image](/images/pwlessLogin.png)
 
 # **`Part 3`**
 I learned a lot about specific Unix commands, as I wasn't too familiar with using the terminal before. I also learned about how URLs are handled and how I could read specific arguments from said URLS. Running a server through Java was also new to me, and I hadn't know I could choose my ports when I start a localhost. One big thing I learned was remote hosting, and I didn't know you could connect and move about remotely using Unix commands.
