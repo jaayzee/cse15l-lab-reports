@@ -10,7 +10,7 @@
 # **PsuedoStudent Result**
 Information from Implementation:
 ![Image](/images/Lab9FixingCode.png) 
-![Image](/images/Lab9Fixedester.png) 
+![Image](/images/Lab9FixedTester.png) 
 The bug is caused by the index1 at the last while loop, as it isn't iterating index2, so the last while loop, if triggered, would never meet a condition where it ends. This causes the OutOfMemoryError, and is clearly seen in the print statements, as we see index1 is iterated to absurd numbers in the index2 while loop.
 ![Image](/images/Lab9Solution.png) 
 # **Information Needed:**
