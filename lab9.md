@@ -8,7 +8,7 @@
 # **PseudoTA Response**
 "Hey, if you let the '..' run, it will give you an OutOfMemoryError. You are correct about the code looping forever, as that is one of the ways to cause such an error. I suggest you set a "(timeout = 500)" next to @Test so it doesn't run forever. As for the issues with your code, is there a way you could get the iterators to show up every loops so that you could diagnose what condition isn't being met?" It may be easier to diagnose issues occurring in your code if you can see what is happening each iteration."
 # **PsuedoStudent Result**
-Information from Implementation:
+Information after Implementation:
 ![Image](/images/Lab9FixingCode.png) 
 ![Image](/images/Lab9FixTester.png) 
 The bug is caused by the index1 at the last while loop, as it isn't iterating index2, so the last while loop, if triggered, would never meet a condition where it ends. This causes the OutOfMemoryError, and is clearly seen in the print statements, as we see index1 is iterated to absurd numbers in the index2 while loop.
