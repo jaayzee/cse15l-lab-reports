@@ -14,18 +14,19 @@ Information after Implementation:
 The bug is caused by the index1 at the last while loop, as it isn't iterating index2, so the last while loop, if triggered, would never meet a condition where it ends. This causes the OutOfMemoryError, and is clearly seen in the print statements, as we see index1 is iterated to absurd numbers in the index2 while loop.
 ![Image](/images/Lab9Solution.png) 
 # **Information Needed:**
-*The tree at the time of the issue looks like this:*
-LAB7
-  lib
-    hamcrest-core-1.3.jar
-    junit-4.13.2.jar
-  .gitignore
-  ListExamples.class
-  ListExamples.java
-  ListExamplesTests.class
-  ListExamplesTests.java
-  StringChecker.class
-  test.sh
+*The tree at the time of the issue looks like this:*  
+LAB7  
+--lib  
+----hamcrest-core-1.3.jar  
+----junit-4.13.2.jar  
+--.gitignore  
+--ListExamples.class  
+--ListExamples.java  
+--ListExamplesTests.class  
+--ListExamplesTests.java  
+--StringChecker.class  
+--test.sh  
+  
 *.class files can be obtained from running `bash test.sh`
 *Content of Pre-fix ListExamples.java*
 ```java
@@ -106,9 +107,9 @@ public class ListExamplesTests {
 javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests
 ```
-* Commands ran to trigger the bug
+* Commands ran to trigger the bug:  
 `bash test.sh`
-* What to edit to fix the bug:
+* What to edit to fix the bug:  
 Line 43 of `ListExamples.java` contains the wrong `index1`, which should be `index2`. Changing this fixes the bug.
 
 
